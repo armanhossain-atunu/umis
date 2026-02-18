@@ -10,6 +10,26 @@ document.addEventListener('DOMContentLoaded', function () {
 		toggle.setAttribute('aria-expanded', String(isOpen));
 	});
 });
+
+// Book Now button functionality
+document.addEventListener('DOMContentLoaded', function () {
+	const bookNowBtn = document.getElementById('affiliate-btn');
+	if (!bookNowBtn) return;
+
+	bookNowBtn.addEventListener('click', function () {
+		const url = 'https://calendly.com/app/availability/schedules';
+		window.open(url, '_blank');
+	});
+})
+document.addEventListener('DOMContentLoaded', function () {
+	const bookNowBtn = document.getElementById('customer-btn');
+	if (!bookNowBtn) return;
+
+	bookNowBtn.addEventListener('click', function () {
+		const url = 'https://calendly.com/app/availability/schedules';
+		window.open(url, '_blank');
+	});
+})
 // Brand slider functionality
 // document.addEventListener('DOMContentLoaded', function () {
 // 	const brandLogos = document.querySelector('.brand-logos');
