@@ -293,6 +293,15 @@ body {
 .affiliate h1 span {
   color: #00c7b4;
 }
+.affiliate p {
+  padding: 0 230px;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 34px;
+}
 .affiliate-img {
   display: flex;
   justify-content: space-between;
@@ -378,10 +387,13 @@ body {
   margin: 0;
   margin-top: 70px;
 }
-.customer-text {
+.customer-text p {
+  text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 16px;
+  padding: 0 131px;
+  line-height: 1.5;
+  font-weight: 400;
   margin-top: 16px;
 }
 .customer-btn {
@@ -399,6 +411,126 @@ body {
   cursor: pointer;
   font-weight: 500;
   margin-top: 20px;
+}
+/* end of customer section */
+#Partnering {
+  padding: 40px 0px;
+}
+.partnering {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.partnering .text {
+  max-width: 600px;
+  margin-right: 40px;
+}
+.partnering .text h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+}
+.partnering .text h1 span {
+  color: #00c7b4;
+}
+.partnering .text p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 16px;
+}
+/* .partnering .video{
+  width: 429px;
+  height: 541px;
+  border-radius: 8px;
+} */
+.partnering .video img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.partnering-btn button {
+  border: 1px solid #00c7b4;
+  font-family: "Poppins", sans-serif;
+  background-color: #00c7b4;
+  color: #fff;
+  margin-top: 20px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.video {
+  position: relative;
+}
+.video .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  opacity: 1;
+}
+.video .play-btn img {
+  color: #fff;
+}
+/* end of partnering section */
+/* gallery section */
+#Gallery {
+  background: #e5fffd;
+}
+.gallery-text {
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.gallery-text h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+}
+.gallery-text h1 span {
+  color: #00c7b4;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.gallery img {
+  width: 387px;
+  height: 300px;
+  border-radius: 8px;
+}
+/* end of gallery section */
+.clients-header{
+  text-align: center;
+  font-family: "poppins", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.clients-header h1{
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+}
+.clients-header h1 span{
+  color: #00c7b4;
+}
+.client-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
 }
 
 /* Extra mobile responsiveness for hero section */
@@ -501,6 +633,9 @@ body {
   }
   /* end of partner section */
 
+  .affiliate p {
+    padding: 0 16px;
+  }
   .affiliate-img {
     flex-direction: column;
     justify-content: center;
@@ -524,7 +659,38 @@ body {
     height: auto;
   }
   /* end of affiliate section */
+  /* start of customer section */
+  .customer-text p {
+    padding: 0 16px;
+  }
+  .customer .overly {
+    padding: 0 16px;
+  }
+  /* end of customer section */
+  .partnering .text {
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .partnering {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+  /* end of partnering section */
+  /* gallery section */
+  .gallery {
+    align-items: start;
+  }
+  .gallery img {
+    width: 100%;
+    height: 94px;
+    border-radius: 8px;
+  }
+
+  /* end of gallery section */
 }
+
 /* Desktop spacing tweak */
 @media (min-width: 1201px) {
   .site-nav {
